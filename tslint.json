@@ -4,6 +4,16 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
-    "rulesDirectory": []
+    "rules": {
+        "semicolon": [
+            true,
+            "never"
+        ]
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**"
+        ]
+    }
 }
