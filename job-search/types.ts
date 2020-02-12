@@ -15,6 +15,6 @@ export interface Config {
     detail: JobDetailConfig
 }
 
-export type GetConfig = () => Config
+export type GetConfig = (key: string) => Config
 
 export type GetConfigKeys = () => string[]
