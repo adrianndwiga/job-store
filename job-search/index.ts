@@ -7,7 +7,7 @@ export class Store {
     }
 
     private addJob(job: Job): void {
-        const jobRef = this.store.collection(Store.JobSearchCollection).doc()
+        const jobRef = this.store.collection(Store.JobSearchCollection).doc(job.id)
         jobRef.set(job)
     }
 

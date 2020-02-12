@@ -5,7 +5,7 @@ describe('job-search store', () => {
     it('should add jobs', async () => {
         const store = new Store(Db.getInstance())
         const jobs = [{
-            id: 'job-id-1',
+            id: 'test-job-id-1',
             title: 'test job title',
             salary: 'test job salary',
             location: 'test job location',
