@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/adrianndwiga/job-store#readme",
   "devDependencies": {
+    "tslint": "^6.0.0",
     "typescript": "^3.7.5"
   }
 }
