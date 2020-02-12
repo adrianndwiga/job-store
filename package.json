@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/adrianndwiga/job-store/issues"
   },
-  "homepage": "https://github.com/adrianndwiga/job-store#readme"
+  "homepage": "https://github.com/adrianndwiga/job-store#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
