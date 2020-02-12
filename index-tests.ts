@@ -1,6 +1,5 @@
 import * as assert from 'assert'
-import * as admin from 'firebase-admin'
-import { readFileSync } from 'fs'
+import { Db } from './db'
 
 describe('setup', () => {
     it('should be true', () => {
@@ -8,15 +7,7 @@ describe('setup', () => {
     })
 
     it('should connect to firebase', async () => {
-        const serviceAccount = JSON.parse(readFileSync('./config.json', 'utf8'))
-
-        admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount),
-            databaseURL: `https://${serviceAccount.project_id}.firebaseio.com`
-        })
-
-        // tslint:disable-next-line: no-console
-        const db = admin.firestore()
+        const db = Db.getInstance()
         const janeSmith = db.collection('jobs').doc('jane-smith')
         const result = await janeSmith.set({
             name: 'Joanne',
