@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/adrianndwiga/job-store#readme",
   "devDependencies": {
+    "@types/mocha": "^7.0.1",
+    "mocha": "^7.0.1",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
   }
